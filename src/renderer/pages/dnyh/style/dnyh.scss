@@ -1,0 +1,150 @@
+.dnyh {
+  .popup {
+    width: 980px;
+    height: 600px;
+    background: rgba(22, 36, 104, 1);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -490px;
+    text-align: center;
+    .popup-title {
+      font-size: 5vh;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      margin-top: 5%;
+    }
+    .Button {
+      display: flex;
+      margin-top: 85px;
+      margin: 85px 48px 0 48px;
+      justify-content: space-around;
+      div {
+        width: 30%;
+        height: 5vh;
+        background: rgba(255, 102, 102, 1);
+        border-radius: 10px;
+        font-size: 4vh;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:last-child {
+          background: rgba(49, 165, 255, 1);
+        }
+      }
+    }
+    .Input {
+      margin-top: 5%;
+      input {
+        width: 70%;
+        height: 10vh;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(231, 239, 244, 1);
+        border-radius: 10px;
+        font-size: 6vh;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+      }
+      .size {
+        margin-top: 70px;
+        div {
+          width: 300px;
+          height: 80px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .maxPopup {
+    width: 95%;
+    height: 95vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    top: 50%;
+    margin-top: -47.5vh;
+    left: 50%;
+    margin-left: -47.5%;
+    background: rgba(22, 36, 104, 1);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    text-align: center;
+    .maxpopup-title {
+      font-size: 4vh;
+      font-weight: 400;
+      margin-top: 4vh;
+    }
+    .lottery {
+      margin-top: 0%;
+      padding: 1vh 3vh;
+      text-align: left;
+      .lotteryItem {
+        display: inline-block;
+        width: 20%;
+        height: 8.5vh;
+        text-align: center;
+        .name {
+          font-size: 4vh;
+        }
+        .num {
+          font-size: 2.5vh;
+        }
+      }
+    }
+    .close {
+      width: 8%;
+      height: 4vh;
+      border-radius: 1vh;
+      background: #31a5ff;
+      display: flex;
+      position: absolute;
+      top: 2vh;
+      right: 2vh;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .printer-view {
+    width: 95%;
+    height: 95vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    top: 50%;
+    margin-top: -47.5vh;
+    left: 50%;
+    margin-left: -47.5%;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    text-align: center;
+    .close {
+      width: 8%;
+      height: 4vh;
+      border-radius: 1vh;
+      background: #31a5ff;
+      display: flex;
+      position: absolute;
+      top: 2vh;
+      left: auto;
+      right: 2vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .print {
+      right: 18vh;
+    }
+    .webview {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

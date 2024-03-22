@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* @page样式是用来设置打印机打印出来的样式，例如设置小票外边距样式 */
+    @page {
+      margin: 0px;
+      padding: 0px 40px;
+    }
+    body{
+      margin: 0px;
+      padding:  0 40px;
+    }
+    h1{
+      text-align: center;
+    }
+    .pagination{
+      display: block;
+      text-align: center;
+      font-size: 16px;
+    }
+    .mybox{
+      display: flex; 
+      overflow: hidden;
+      justify-content: flex-start;
+    }
+    .flex50{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      overflow: hidden;
+    }
+    .name{
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+    table{
+      /* height: 300px; */
+      overflow: hidden;
+    }
+    table,thead,tfoot{
+      width: 100%;
+      text-align: center;
+    }
+    thead,tfoot{
+      font-weight: bold;
+    }
+    thead{
+      display: table-header-group;
+    }
+    tfoot{
+      display: table-footer-group;
+    }
+    td,th{
+      overflow: hidden;
+    }
+    tr{
+      border: 1px solid black;
+      height: 40px;
+    }
+    th{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    /* td,th{
+      border-right: 1px solid black;
+    } */
+  </style>
+</head>
+<body id='bd'>
+</body>
+<!-- <script>
+  const {ipcRenderer} = require('electron')
+
+  function setHtml(){
+    let html = '';
+    html = `<p>a   testtttttt</p>`;
+    document.getElementById('bd').innerHTML = html;
+  }
+    ipcRenderer.on('webview-print-render', (event) => {
+    console.log(test2);
+    ipcRenderer.sendToHost('webview-print-do');
+  });
+</script> -->
+</html>

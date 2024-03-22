@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, rgb(21, 26, 64), rgb(25, 59, 193), rgb(21, 26, 64));
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.pointer{
+  cursor:pointer
+}
+
+
+  /* 饿了么弹窗样式修改 */
+  .el-message-box{
+    background:rgba(22,36,104,1);
+    box-shadow:0px 0px 20px 0px rgba(255,255,255,0.5);
+    border-radius:10px;
+    .el-message-box__title{
+      // border-bottom: 1px solid #cccccc;
+    }
+    .el-message-box__content,.el-message-box__title{
+      color: #FFFFFF !important;
+    }
+  }
+
+// 导入全局底部样式
+.public-base {
+  padding: 0  40px;
+  // overflow: hidden;
+  max-height: 10%;
+  display: flex;
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  .public-base-left {
+    // flex: 0 0 auto;
+    // flex: 1;
+    .base-left-head {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size:2vh;
+      font-weight:300;
+      color:rgba(255,255,255,1);
+      i {
+        display: inline-block;
+        width:2%;
+        height:2vh;
+        margin-right: 13px;
+        background: url('../../static/images/img_02.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .head-left {
+        flex: 0 0 auto;
+        width: 10%;
+        font-size:2vh;
+        font-weight:400;
+        color:rgba(129,167,196,1);
+        padding-right: 1vh;
+        border-right: 1px solid #81A7C4;
+      }
+      .head-info {
+        margin-left: 9px;
+        .head-info-tab {
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          &:last-child{
+          }
+        }
+      }
+    }
+    .base-left-bootom {
+      margin-top: 2%;
+      display: flex;
+      align-items: center;
+      .bootom-left {
+        flex: 0 0 auto;
+        font-size:2vh;
+        font-weight:400;
+        color:#FFFFFF;
+        padding-right: 9px;
+        border-right: 1px solid #81A7C4;
+      }
+      .bootom-right {
+        display: flex;
+        align-items: center;
+        .right-tab {
+          display: flex;
+          align-items: center;
+          margin-left: 2vh;
+          color:#ffffff;
+          .tab-number {
+            // font-size:8px;
+            font-size:2vh;
+            font-weight:300;
+          }
+          .right-info {
+            margin-left: 1vh;
+            font-size:2vh;
+            font-weight:400;
+          }
+        }
+        .cor{
+          color:#ffff33;
+        }
+      }
+    }
+    .base-left-bootom-margin {
+      margin-top: 3%;
+    }
+    .base-list {
+      display: flex;
+      align-items: center;
+      .base-left-tab {
+        border-right: 1px solid #FFFFFF;
+        text-align: center;
+        margin-top: 3vh;;
+        padding:0 4vh;
+        &:first-child{
+          padding-left: 0;;
+        }
+        .tab-number {
+          font-size:3vh;
+          color:rgba(102,204,102,1);
+        }
+        .color1 {
+          color:rgba(51,153,255,1);
+        }
+        .color2 {
+          color:rgba(255,102,102,1);
+        }
+        .tab-name {
+          font-size:2vh;
+          font-weight:300;
+          color:rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+  .public-base-right {
+    margin-left: auto;
+    .base-right-head {
+      display: flex;
+      align-items: center;
+      font-size:2vh;
+      color:rgba(255,255,255,1);
+      white-space: nowrap;
+      i {
+        display: inline-block;
+        width: 5px;
+        height:2vh;
+        background:rgba(255,255,255,1);
+        border-radius:4px;
+        margin-right: 1%;
+      }
+    }
+    .base-right-bootom {
+      margin-top: 4%;
+      display: flex;
+      align-items: center;
+      .bootom-but {
+        width:10vw;
+        height:40px;
+        background:rgba(49,165,255,1);
+        border-radius:10px;
+        font-size:15px;
+        font-weight:300;
+        color:rgba(255,255,255,1);
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .cor1{
+        background:rgba(255, 102, 102, 1);
+      }
+      .bootom-but-little {
+        width: 120px;
+      }
+    }
+    .base-right-bootom-margin {
+      margin-top: 13px;
+    }
+  }
+}
+.printer-view{
+  position: absolute;
+  z-index: 999;
+  // left: -100px;
+  width: 20px;
+  height: 20px;
+}

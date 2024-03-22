@@ -1,0 +1,113 @@
+.daoru {
+  font-size: 2.5vh;
+  position: absolute;
+  top: 10%;
+  bottom: 13%;
+  padding: 0 40px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  .title {
+    color: #ffffff;
+    font-weight: bold;
+    height: 10vh;
+    background: rgba(229, 244, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 14px 0;
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 15px;
+        height: 17px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .PublicTable {
+    border: 2px solid rgba(255, 255, 255, 1);
+    overflow: hidden;
+    .table {
+      display: flex;
+      color: #ffffff;
+      .table_main {
+        width: 100%;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        border-bottom: 2px solid #ffffff;
+        overflow: hidden;
+        &:first-child {
+          border-right: 2px solid #ffffff;
+        }
+        tr {
+          width: 100%;
+          height: 6vh;
+          &:first-child {
+            border-bottom: 2px solid #ffffff;
+          }
+          &:nth-child(2n-1) {
+            background: rgba(255, 255, 255, 0.15);
+          }
+          td,
+          th {
+            text-align: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            max-height: 6vh;
+            white-space:nowrap;
+            overflow:hidden;
+            &:nth-child(7n) {
+              border-right: none;
+            }
+          }
+          td {
+          //   &:nth-child(1),
+          //   &:nth-child(3) {
+          //     width: 98px;
+          //   }
+          //   &:nth-child(2) {
+          //     width: 179px;
+          //   }
+            // &:nth-child(4) {
+            //   max-width: 8vh;
+            //   overflow: hidden;
+            // }
+          //   &:nth-child(5) {
+          //     width: 230px;
+          //   }
+          } 
+        }
+      }
+    }
+    .fenye {
+      text-align: center;
+      padding: 1vh;
+      /deep/ span {
+        font-size: 2vh !important;
+      }
+      /deep/ button {
+        width: 5% !important;
+      }
+      /deep/ button,
+      /deep/ li {
+        width: 2%;
+        background: rgba(255, 255, 255, 0) !important;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 4px;
+        color: #ffffff !important;
+        font-size: 2vh !important;
+      }
+      /deep/ .active {
+        background: #ffffff !important;
+        color: rgba(20, 37, 129, 1) !important;
+      }
+    }
+  }
+}
